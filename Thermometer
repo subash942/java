@@ -1,0 +1,7 @@
+public class Thermometer {
+  public ststic void main(String [] args) {
+    double faherenheit = 98.6;
+    double ceilus = (faherenheit-32)*5/9;
+    System.out.println(celius);
+    }
+  }
