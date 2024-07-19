@@ -3,7 +3,7 @@ public class Myself {
 	public static void main(String[] args) {
 		// Writing about myself
 		System.out.println("My name is SUBASH SAHANI.");
-		System.out.println("I am from Devarakonda which is located in JIYAGUDA.");
+		System.out.println("I am from Hyderabadnwhich is located in JIYAGUDA.");
 		System.out.println("I am studying MCA 1st year at Avanthi PG college. ");
 		System.out.println("I have completed my B.sc from MGPG.");
 		System.out.println("I have a small family");
