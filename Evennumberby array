@@ -1,0 +1,34 @@
+import java.util.Scanner;
+ class Evennumbers {
+
+    public static void main(String[] args) {
+        /*creating an array of 10 numbers*/
+        int[] numbers;
+        numbers = new int[10];
+        /*creating a variable for index*/
+        int index;
+        /*creating object of scanner class*/
+        Scanner sc = new Scanner(System.in);
+        /*input of data through keyboard*/
+        System.out.println("Enter any 10 numbers:");
+        for (index = 0; index < numbers.length; index++) {
+            numbers[index] = sc.nextInt();
+        }
+        /*Displaying elements of an array*/
+        System.out.println("------------------");
+        System.out.println("Numbers are:");
+        for (index = 0; index < numbers.length; index++) {
+            System.out.println(numbers[index] + ",");
+        }
+
+        /*display evennumber*/
+        System.out.print("/n----");
+        System.out.println("Evennumbers are:");
+        for (index = 0; index < numbers.length; index++) {
+            if (numbers[index] % 2 == 0) {
+                System.out.print(numbers[index] + ",");
+            }
+        }
+    }
+
+}
