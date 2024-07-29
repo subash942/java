@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class AverageArray{
+    public static void main(String[] args){
+        /* creating object for scanner class*/
+        Scanner sc = new Scanner(System.in);
+        int numbers[];
+        int index, sum;
+        double average;
+        sum=0;
+        /* initializing the length*/
+        numbers= new int[15];
+        System.out.println("Enter any 15 number:");
+        for(index=0;index<numbers.length;index++){
+            numbers[index]= sc.nextInt();
+        }
+       for(index=0;index<numbers.length;index++){
+           System.out.println(numbers[index]+",");
+       }
+        for(index=0;index<numbers.length;index++){
+            sum+=numbers[index];
+        }
+        average=sum/15;
+        System.out.println("/n average="+average);
+    }
+}
