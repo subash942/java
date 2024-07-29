@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Array{
+    public static void main(String[] args){
+     /*declaration of array*/
+     int[] numbers;
+     numbers = new int[15];
+     int index;
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter any 15 number: ");
+     for(index =0; index<numbers.length;index++)
+     {
+         numbers[index] =sc.nextInt();
+
+     }
+     System.out.println(".......");
+     System.out.println("numbers are:");
+     for(index=0;index<numbers.length;index++){
+         System.out.print(numbers[index]+",");
+     }
+
+    }
+
+}
