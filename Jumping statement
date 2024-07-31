@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class JumpingStatementExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int number = scanner.nextInt();
+
+        if (number < 10) {
+            System.out.println("Number is less than 10");
+            // Using break statement
+            if (number == 5) {
+                System.out.println("Number is 5, breaking the loop");
+                break;
+            }
+        } else {
+            System.out.println("Number is greater than or equal to 10");
+            // Using continue statement
+            if (number == 15) {
+                System.out.println("Number is 15, continuing to the next iteration");
+                continue;
+            }
+        }
+
+        System.out.println("This will be printed if number is not 5 or 15");
+
+        // Using return statement
+        if (number == 20) {
+            System.out.println("Number is 20, returning from the method");
+            return;
+        }
+
+        System.out.println("This will be printed if number is not 20");
+    }
+}
