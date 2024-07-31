@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Amountcalculator{
+    /*...method to calculate simple interest...*/
+    public static float calculateSimpleInterest(float principal,float rate,int time){
+    float si;
+    /*...calculate simple interest...*/
+        si =(principal *rate*time)/100;
+        /*...returning simple interest...*/
+        return si;
+    }
+    /*...................................................*/
+    public static void main(String[] args){
+        //creating object of scanner class
+        Scanner sc = new Scanner(System.in);
+        /*...variables to store principal,rate and time.....*/
+        float principal ,rate;
+        int time;
+        //input from the keyboard
+        System.out.print("Enter principal(in Rs) :");
+        principal=sc.nextFloat();
+        System.out.print("Enter rate(in %) :");
+        rate=sc.nextFloat();
+        System.out.print("Enter time (in year) :");
+        time=sc.nextInt();
+        //calculate simple interest
+        float interest = calculateSimpleInterest(principal,rate,time);
+        //to calculate amount
+        float amount =principal + interest;
+        System.out.println(".........................");
+        System.out.println("Amount to be paid after charging simple interest :RS" +amount);
+
+    }
+}
