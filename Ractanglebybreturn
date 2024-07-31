@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Rectangle {
+    public static void main(String[] args) {
+        /*.... Create a Scanner object to get user input...*/
+        Scanner scanner = new Scanner(System.in);
+
+        /*...   user to enter the length of the rectangle...*/
+        System.out.println("Enter the length of the rectangle: ");
+
+        double length = scanner.nextDouble();
+
+        /*...  user to enter the width of the rectangle...*/
+        System.out.println("Enter the width of the rectangle: ");
+
+        double width = scanner.nextDouble();
+
+
+        /*... Calculate the area of the rectangle...*/
+        double area = calculateArea(length, width);
+        /*...Calculate the perimeter of the rectangle...*/
+        double perimeter = calculatePerimeter(length, width);
+
+        /* ...Print the calculated area and perimeter of the rectangle...*/
+        System.out.println("The area of the rectangle is: " + area);
+        System.out.println("The perimeter of the rectangle is: " + perimeter);
+    }
+
+    /**...Calculates the area of a rectangle...*/
+
+    public static double calculateArea(double length, double width) {
+        
+        return length * width;
+    }
+
+    /*...Calculates the perimeter of a triangle...*/
+
+    public static double calculatePerimeter(double length, double width) {
+        /* ...Return the perimeter of the rectangle, which is 2 * (length + width)...*/
+        return 2 * (length + width);
+    }
+}
