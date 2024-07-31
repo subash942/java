@@ -1,0 +1,24 @@
+import java.util.Scanner;//import the scanner class for user input
+public class OddOrEven {
+
+    public static void main(String[] args) {
+        // create a scanner object to read user input
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int number = sc.nextInt();
+// call the checkoddoreven method to determine if the number is odd or even
+        checkOddOrEven(number);
+
+    } // check it odd or even
+    public static void checkOddOrEven(int number) {
+       //if remainder is 0,the number is even otherwise it is odd
+        if(number%2==0)
+        {
+            System.out.println(number+"is even number :");
+        }
+        else{
+            System.out.println(number+"is odd number:");
+        }
+    }
+
+}
