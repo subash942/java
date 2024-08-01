@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class radius {
+public class age{
     public static boolean isElligible(int age) {
         if(age > 18) {
             return true;
