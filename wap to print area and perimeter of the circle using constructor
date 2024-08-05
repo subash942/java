@@ -1,0 +1,45 @@
+/*...definition of circle class*/
+class circle
+{
+    /*member variable*/
+    float radius;
+    /*parameterised constructor*/
+    circle(float r) {
+        radius = r;
+    }
+    /* method to display radius*/
+    public void displayRadius()
+    {
+        System.out.println("circle");
+        System.out.println("Radius:" + radius+"cm");
+    }
+    /*...method to calculate area...*/
+    public void calculateArea()
+    {
+        float area;
+        area = 3.14f*radius*radius;
+        System.out.println("Area:"+area+"sq.cm");
+
+    }
+    /*method to calculate perimeter*/
+    public void calculatePerimeter(){
+        float perimeter;
+        perimeter = 2*3.14f*radius;
+        System.out.println("Perimeter:"+perimeter+"cm");
+    }
+}
+/*initial class*/
+class CircleOperation {
+    public static void main(String[] args) {
+        /*creation of circle*/
+        circle circleobj = new circle(7.0f);
+        /*...displaying Radius...*/
+        circleobj.displayRadius();
+        /* perimeter of circle*/
+        circleobj.calculatePerimeter();
+        /* area of circle*/
+        circleobj.calculateArea();
+    }
+}
+
+
