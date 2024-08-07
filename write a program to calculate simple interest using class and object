@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+/* Define a class to represent a savings account*/
+ class SavingsAccount {
+    private double principal;
+    private double rate;
+    private int time;
+    /* Constructor to initialize the object*/
+    public SavingsAccount(double $, double rate, int year) {
+        this.principal = $;
+        this.rate = rate;
+        this.time = year;
+    }
+    /*Method to calculate simple interest*/
+    public double calculateInterest() {
+        return (principal * rate * time) / 100;
+    }
+    /* Method to display the result*/
+    public void displayResult() {
+        double interest = calculateInterest();
+        System.out.println("Simple Interest: " + interest);
+        System.out.println("Total Amount: " + (principal + interest));
+    }
+}
+public class Interest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the principal amount: ");
+        double principal = scanner.nextDouble();
+        System.out.print("Enter the interest rate (in %): ");
+        double rate = scanner.nextDouble();
+        System.out.print("Enter the time period (in years): ");
+        int time = scanner.nextInt();
+        SavingsAccount account = new SavingsAccount(principal, rate, time);
+        account.displayResult();
+    }
+}
+
+
