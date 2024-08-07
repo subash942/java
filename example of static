@@ -1,0 +1,35 @@
+/*  defining a class with name numericdata*/
+class NumericData
+{
+    /* instance variable*/
+    int num1=30;
+    /* class variable or static variable*/
+    static int num2=20;
+    /* method for iniitialising data*/
+    public void displaynumbers()
+    {
+        System.out.println("num1:"+num1);
+        System.out.println("num1:"+num2);
+
+    }
+    /* method to increment the value of both number*/
+    public void increment(){
+        num1=num1+10;
+        num2=num2+20;
+    }
+}
+public class SecondExample{
+    public static void main(String[] args)
+    {
+        // first number
+        NumericData number1=new NumericData();
+        System.out.println(" first object");
+        number1.displaynumbers();
+        number1.increment();
+        // second number
+        NumericData number2=new NumericData();
+        System.out.println(" second object");
+        number2.displaynumbers();
+        number2.increment();
+    }
+}
